@@ -1,11 +1,15 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RepositoryListComponent } from './repository-list.component';
 
 @Component({
   selector: 'gitropolis-orgs-repositories',
   standalone: true,
-  imports: [CommonModule],
-  template: ` <p>organizations-feat-repositories works!</p> `,
+  imports: [RepositoryListComponent],
+  template: `
+    <div className="container-lg p-responsive">
+      <gitropolis-orgs-repository-list></gitropolis-orgs-repository-list>
+    </div>
+  `,
   styles: [
     `
       :host {
@@ -15,8 +19,4 @@ import { CommonModule } from '@angular/common';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class OrganizationsFeatRepositoriesComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-}
+export class OrganizationsFeatRepositoriesComponent {}
