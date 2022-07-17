@@ -5,7 +5,8 @@
     "defaultBase": "main"
   },
   "cli": {
-    "packageManager": "yarn"
+    "packageManager": "yarn",
+    "defaultCollection": "@nrwl/angular"
   },
   "implicitDependencies": {
     "package.json": {
@@ -30,6 +31,9 @@
   "generators": {
     "@nrwl/angular:application": {
       "style": "scss",
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "skipTests": true,
       "linter": "eslint",
       "unitTestRunner": "jest",
       "e2eTestRunner": "cypress"
@@ -39,7 +43,25 @@
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "changeDetection": "OnPush",
+      "displayBlock": true,
+      "flat": true,
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "skipTests": true,
+      "standalone": true
+    },
+    "@schematics/angular:directive": {
+      "skipTests": true,
+      "standalone": true
+    },
+    "@schematics/angular:pipe": {
+      "skipTests": true,
+      "standalone": true
+    },
+    "@schematics/angular:service": {
+      "skipTests": true
     }
   },
   "defaultProject": "gitropolis-app"
