@@ -6,7 +6,7 @@ import { RepositoryListComponent } from './repository-list.component';
   standalone: true,
   imports: [RepositoryListComponent],
   template: `
-    <div className="container-lg p-responsive">
+    <div class="container-lg p-responsive">
       <gitropolis-orgs-repository-list></gitropolis-orgs-repository-list>
     </div>
   `,
