@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@gitropolis/buildable-library": ["libs/buildable-library/src/index.ts"],
       "@gitropolis/workspace-library": ["libs/workspace-library/src/index.ts"]
     }
   },

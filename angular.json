@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "buildable-library": "libs/buildable-library",
     "gitropolis-app": "apps/gitropolis-app",
     "gitropolis-app-e2e": "apps/gitropolis-app-e2e",
     "workspace-library": "libs/workspace-library"
