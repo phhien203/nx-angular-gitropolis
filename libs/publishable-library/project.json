@@ -1,0 +1,41 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/publishable-library/src",
+  "prefix": "gitropolis",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/publishable-library"],
+      "options": {
+        "project": "libs/publishable-library/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/publishable-library/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/publishable-library/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/publishable-library"],
+      "options": {
+        "jestConfig": "libs/publishable-library/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/publishable-library/**/*.ts",
+          "libs/publishable-library/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

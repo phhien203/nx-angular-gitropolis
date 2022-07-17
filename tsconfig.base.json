@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@gitropolis/buildable-library": ["libs/buildable-library/src/index.ts"],
+      "@gitropolis/publishable-library": [
+        "libs/publishable-library/src/index.ts"
+      ],
       "@gitropolis/workspace-library": ["libs/workspace-library/src/index.ts"]
     }
   },
