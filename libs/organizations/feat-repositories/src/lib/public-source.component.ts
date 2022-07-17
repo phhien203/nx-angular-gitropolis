@@ -13,7 +13,9 @@ import { TopicsComponent } from './topics.component';
       <span class="Label Label--secondary ml-1">Public</span>
     </h3>
     <p *ngIf="hasDescription">{{ repository?.description }}</p>
-    <gitropolis-orgs-topics></gitropolis-orgs-topics>
+    <gitropolis-orgs-topics
+      [topics]="repository?.topics ?? []"
+    ></gitropolis-orgs-topics>
   `,
   styles: [
     `
