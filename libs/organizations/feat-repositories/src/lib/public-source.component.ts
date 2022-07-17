@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Repository } from '@gitropolis/organizations/data-access';
 import { TopicsComponent } from './topics.component';
 
 @Component({
@@ -8,10 +9,10 @@ import { TopicsComponent } from './topics.component';
   imports: [CommonModule, TopicsComponent],
   template: `
     <h3>
-      {{ name }}
+      {{ repository?.name }}
       <span class="Label Label--secondary ml-1">Public</span>
     </h3>
-    <p>{{ description }}</p>
+    <p *ngIf="hasDescription">{{ repository?.description }}</p>
     <gitropolis-orgs-topics></gitropolis-orgs-topics>
   `,
   styles: [
@@ -26,4 +27,11 @@ import { TopicsComponent } from './topics.component';
 export class PublicSourceComponent {
   name = 'nx';
   description = 'Smart, Fast and Extensible Build System';
+
+  @Input()
+  repository: Repository | null = null;
+
+  get hasDescription(): boolean {
+    return (this.repository?.description ?? '') !== '';
+  }
 }
