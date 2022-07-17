@@ -19,6 +19,9 @@
       "@gitropolis/publishable-library": [
         "libs/publishable-library/src/index.ts"
       ],
+      "@gitropolis/publishable-library/testing": [
+        "libs/publishable-library/testing/src/index.ts"
+      ],
       "@gitropolis/workspace-library": ["libs/workspace-library/src/index.ts"]
     }
   },
