@@ -22,6 +22,7 @@
     "@nrwl/angular": "14.4.3",
     "@octokit/rest": "^19.0.3",
     "@primer/css": "^20.2.4",
+    "@rx-angular/state": "^1.6.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
