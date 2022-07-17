@@ -1,11 +1,17 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'gitropolis-orgs-public-source',
   standalone: true,
   imports: [CommonModule],
-  template: ` <p>public-source works!</p> `,
+  template: `
+    <h3>
+      {{ name }}
+      <span class="Label Label--secondary ml-1">Public</span>
+    </h3>
+    <p>{{ description }}</p>
+  `,
   styles: [
     `
       :host {
@@ -15,8 +21,7 @@ import { CommonModule } from '@angular/common';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PublicSourceComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class PublicSourceComponent {
+  name = 'nx';
+  description = 'Smart, Fast and Extensible Build System';
 }
