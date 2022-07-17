@@ -31,12 +31,12 @@
   "generators": {
     "@nrwl/angular:application": {
       "style": "scss",
-      "inlineStyle": true,
-      "inlineTemplate": true,
-      "skipTests": true,
       "linter": "eslint",
       "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "e2eTestRunner": "cypress",
+      "inlineStyle": true,
+      "inlineTemplate": true,
+      "skipTests": true
     },
     "@nrwl/angular:library": {
       "linter": "eslint",
