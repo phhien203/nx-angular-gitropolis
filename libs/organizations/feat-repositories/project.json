@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/organizations/feat-repositories/src",
+  "prefix": "gitropolis-orgs",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/organizations/feat-repositories"],
+      "options": {
+        "jestConfig": "libs/organizations/feat-repositories/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/organizations/feat-repositories/**/*.ts",
+          "libs/organizations/feat-repositories/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

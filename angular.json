@@ -5,6 +5,7 @@
     "buildable-library": "libs/buildable-library",
     "gitropolis-app": "apps/gitropolis-app",
     "gitropolis-app-e2e": "apps/gitropolis-app-e2e",
+    "organizations-feat-repositories": "libs/organizations/feat-repositories",
     "publishable-library": "libs/publishable-library",
     "workspace-library": "libs/workspace-library"
   }
