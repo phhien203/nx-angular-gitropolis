@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/organizations/data-access/src",
+  "prefix": "gitropolis",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/organizations/data-access"],
+      "options": {
+        "jestConfig": "libs/organizations/data-access/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/organizations/data-access/**/*.ts",
+          "libs/organizations/data-access/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

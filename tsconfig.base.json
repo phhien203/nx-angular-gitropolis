@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@gitropolis/buildable-library": ["libs/buildable-library/src/index.ts"],
+      "@gitropolis/organizations/data-access": [
+        "libs/organizations/data-access/src/index.ts"
+      ],
       "@gitropolis/organizations/feat-repositories": [
         "libs/organizations/feat-repositories/src/index.ts"
       ],
