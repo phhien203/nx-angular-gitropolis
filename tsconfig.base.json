@@ -27,8 +27,7 @@
       ],
       "@gitropolis/publishable-library/testing": [
         "libs/publishable-library/testing/src/index.ts"
-      ],
-      "@gitropolis/workspace-library": ["libs/workspace-library/src/index.ts"]
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
